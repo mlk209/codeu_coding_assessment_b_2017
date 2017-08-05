@@ -27,9 +27,11 @@ import com.google.codeu.mathlang.parsing.TokenReader;
 // work with the test of the system.
 public final class MyTokenReader implements TokenReader {
 
+  private String varString;
   public MyTokenReader(String source) {
     // Your token reader will only be given a string for input. The string will
     // contain the whole source (0 or more lines).
+    varString = source;
   }
 
   @Override
